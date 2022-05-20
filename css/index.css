@@ -53,6 +53,20 @@
             }
         }
         
+        i {
+            cursor: pointer;
+        }
+        
+        .secondSection {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .firstSection {
+            display: flex;
+            flex-direction: row;
+        }
+        
         .p-menu2 {
             width: 100%;
             display: none;
@@ -256,7 +270,7 @@
         .wave-container {
             background-size: 100% auto;
             background-repeat: repeat-x;
-            max-height: 60px;
+            max-height: 40px;
             max-width: 100%;
         }
         /* Resize images */
@@ -500,11 +514,6 @@
         .inside-grid-column {
             padding: 0 10px 0 10px;
             margin-bottom: 1.5em;
-        }
-        
-        .itemRight {
-            float: left;
-            width: 30%;
         }
         
         a {
@@ -989,22 +998,17 @@
             padding: 0;
         }
         
-        @media (min-width: 1025px) {
-            .itemLeft {
-                float: left;
-                width: 70%;
-            }
-            .itemRight {
-                float: left;
-                width: 30%;
-            }
-            .itemBottom {
-                float: left;
-                width: 50%;
-            }
-        }
-        
         @media screen and (max-width: 768px) {
+            figure {
+                float: none !important;
+            }
+            figure a {
+                object-fit: contain;
+                right: 30px;
+            }
+            .wave-container {
+                max-height: 5px;
+            }
             .search {
                 display: none;
             }
@@ -1022,23 +1026,11 @@
             .footer {
                 flex-direction: column;
             }
-            .itemLeft {
-                clear: both;
-                width: 100%;
-                height: auto !important;
-                margin-bottom: 40px;
+            .firstSection {
+                flex-direction: column;
             }
-            .itemRight {
-                clear: both;
-                width: 100%;
-                height: auto !important;
-                margin-bottom: 40px;
-            }
-            .itemBottom {
-                clear: both;
-                width: 100%;
-                height: auto !important;
-                margin-bottom: 40px;
+            .secondSection {
+                flex-direction: column;
             }
             .mainnav {
                 display: flex !important;
