@@ -999,6 +999,18 @@
         }
         
         @media screen and (max-width: 768px) {
+            .itemLeft {
+                height: auto !important;
+            }
+            .itemRight {
+                height: auto !important;
+            }
+            .strangelyImage {
+                height: 100% !important;
+                width: 100% !important;
+                max-width: 600px;
+                max-height: 478px;
+            }
             figure {
                 float: none !important;
             }
